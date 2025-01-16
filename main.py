@@ -84,7 +84,7 @@ kayıt olan: {user.mention}
                     description=f"{user.mention} aramıza katıldı! Hadi ne bekliyorsun sohbete katıl",
                     color=0xf6f478
                 ).set_thumbnail(url=avatar
-                ).set_footer(ctx.guild.name)
+                ).set_footer(text=ctx.guild.name)
             )
         else:
             embed = discord.Embed(
@@ -123,7 +123,6 @@ Kaynak kodları: {config["github_link"]}
         ).set_footer(text=bot.user.name)
     )
 
-
 @bot.tree.command(
     name="kayıt",
     description="Kullanıcıyı kayıt eder."
@@ -135,10 +134,10 @@ async def kayıt_slash(interaction : discord.Interaction, user : discord.Member,
         if any(role.id == config["role_id"] for role in interaction.user.roles):
             await user.edit(nick=name)
             await user.remove_roles(
-                await discord.utils.get(interaction.guild.id, id=config["unregistered_role"])
+                discord.utils.get(interaction.guild.roles, id=config["unregistered_role"])
             )
             await user.add_roles(
-                await discord.utils.get(interaction.guild.id, id=config["member_role"])
+                discord.utils.get(interaction.guild.roles, id=config["member_role"])
             )
 
             avatar = user.avatar if user.avatar else user.default_avatar
@@ -160,7 +159,7 @@ kayıt olan: {user.mention}
                     description=f"{user.mention} aramıza katıldı. Hadi ne bekliyorsun sohbete katıl!",
                     color=0xf6f478
                 ).set_thumbnail(url=avatar
-                ).set_footer(interaction.guild.name)
+                ).set_footer(text=interaction.guild.name)
             )
         else:
             embed = discord.Embed(
