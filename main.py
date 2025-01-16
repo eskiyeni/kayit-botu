@@ -29,6 +29,11 @@ bot = commands.Bot(command_prefix=config["prefix"], intents=intents, help_comman
 @bot.event
 async def on_ready():
     await bot.tree.sync()
+    channel = config["channel"]
+    if channel:
+        channel = await bot.fetch_channel(channel)
+        await channel.connect()
+        print("Ses kanalına bağlanıldı!")
     print(f"{bot.user.name} aktif!")
 
 @bot.command()
