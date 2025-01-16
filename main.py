@@ -76,6 +76,16 @@ kayıt olan: {user.mention}
                 color=0x00FF00
             ).set_thumbnail(url=avatar
             ).set_footer(text="Aramıza hoşgeldin!")
+
+            chat = await bot.fetch_channel(config["chat_channel"])
+            await chat.send(
+                embed=discord.Embed(
+                    title="Aramıza Hoşgeldin!",
+                    description=f"{user.mention} aramıza katıldı! Hadi ne bekliyorsun sohbete katıl",
+                    color=0xf6f478
+                ).set_thumbnail(url=avatar
+                ).set_footer(ctx.guild.name)
+            )
         else:
             embed = discord.Embed(
                 title="HATA!",
@@ -142,6 +152,16 @@ kayıt olan: {user.mention}
                 color=0x00FF00
             ).set_thumbnail(url=avatar
             ).set_footer(text="Aramıza hoşgeldin!")
+
+            chat = await bot.fetch_channel(config["chat_channel"])
+            await chat.send(
+                embed=discord.Embed(
+                    title="Aramıza Hoşgeldin!",
+                    description=f"{user.mention} aramıza katıldı. Hadi ne bekliyorsun sohbete katıl!",
+                    color=0xf6f478
+                ).set_thumbnail(url=avatar
+                ).set_footer(interaction.guild.name)
+            )
         else:
             embed = discord.Embed(
                 title="HATA!",
