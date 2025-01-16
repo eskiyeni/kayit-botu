@@ -4,5 +4,6 @@
     "github_link": "github_link",
     "role_id": 123,
     "member_role": 456,
-    "unregistered_role": 789
+    "unregistered_role": 789,
+    "channel": 123
 }
