@@ -2,9 +2,9 @@
     "token": "token",
     "prefix": "prefix",
     "github_link": "github_link",
-    "role_id": 123,
-    "member_role": 456,
-    "unregistered_role": 789,
-    "channel": 123,
-    "chat_channel": 456
+    "staff_role": null,
+    "member_role": null,
+    "unregistered_role": null,
+    "chat_channel": null,
+    "unregistered_channel": null
 }
