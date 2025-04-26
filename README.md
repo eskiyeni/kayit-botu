@@ -1,15 +1,11 @@
-# cayhane-kayit
+# Kayıt Botu
 
-A Discord bot for Çayhane with discord.py
+# Discord sunucunuz için discord.py ile yapılmış bir kayıt botu.
 
-### REQUIREMENTS:
-Python 3.8+  
-discord  
-PyNaCl (optional)  
-(You can use "pip install -r requirements.txt" for install)
+### gereksinimler
+- Python 3.8 veya üstü
+- discord.py
+- PyNaCl (opsiyonel)
+-# Gereksinimler `pip install -r requirements.txt` komutu ile kurulabilir.
 
-### USAGE:
-Just change the config.json
-
-### IF YOU HELP:
-Discord: eskiyeniahmet
+Herhangibi bir sorunda Discord üzerinden eskiyeniahmet ile iletişime geçebilir veya Issues sayfası açabilirsiniz.
