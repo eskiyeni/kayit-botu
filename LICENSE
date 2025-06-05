@@ -1,10 +1,10 @@
-MIT License
+# MIT Lisansı
 
 Copyright © 2025 eskiyeni
 
-Permission is hereby granted, free of charge, to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, subject to the following conditions:
+İşbu yazılımı kullanmak, kopyalamak, değiştirmek, birleştirmek, yayımlamak, dağıtmak, alt lisanslamak veya satmak ücretsizdir. Ancak aşağıdaki koşullar geçerlidir:
 
-- The software must be used in exchange for credit to the original author, "eskiyeni".
-- The software is provided "as-is", without warranty of any kind, either express or implied. The author(s) shall not be liable for any damages arising from the use of this software.
+- Yazılım kullanılırken orijinal yazar **"eskiyeni"** olarak mutlaka belirtilmelidir, yani kredi verilmesi zorunludur.  
+- Yazılım tamamen **"olduğu gibi"** sağlanmaktadır, hiçbir garanti verilmez. Yazar(lar), yazılımın kullanımından doğabilecek herhangi bir zarardan sorumlu tutulamaz.
 
-Inclusion of this license and copyright notice in all copies or substantial portions of the Software is required.
+Bu lisans ve telif hakkı bildirimi, yazılımın tüm kopyalarında veya önemli bölümlerinde bulunmak zorundadır.
